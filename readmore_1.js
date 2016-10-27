@@ -21,7 +21,7 @@ function createSummaryAndThumb(pID){
 	var img = div.getElementsByTagName("img");
 	var summ = summary_noimg;
 	if(img.length>=1) {	
-		imgtag = '<span class="first-img"><img  src="'+img[0].src+'" alt="'post_title'"/></span>';
+		imgtag = '<span class="first-img"><img  src="'+img[0].src+'" alt="<data:post.title/>"/></span>';
 		summ = summary_img;
 	}
 	
