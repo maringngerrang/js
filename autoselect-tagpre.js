@@ -1,0 +1,1 @@
+for(var pres=document.getElementsByTagName('pre'),i=0;i<pres.length;i++)pres[i].addEventListener('click',function(e){if(3===e.detail){var t=getSelection(),n=document.createRange();n.selectNodeContents(this),t.removeAllRanges(),t.addRange(n)}},!1);
